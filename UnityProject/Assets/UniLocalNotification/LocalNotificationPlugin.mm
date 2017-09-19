@@ -24,5 +24,6 @@ bool IsNotificationPermitted_(){
     if(iOSVersion < 8.0){
         return true;
     }
-    return [[UIApplication sharedApplication] isRegisteredForRemoteNotifications];
+    UIUserNotificationSettings *settings = [[UIApplication sharedApplication] currentUserNotificationSettings];
+    return settings.types != 0;
 }
