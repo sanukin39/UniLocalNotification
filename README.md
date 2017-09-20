@@ -59,7 +59,28 @@ UniLocalNotification.OpenAppSetting();
 ```
 
 ## Install
-Use unitypackage under the "UnityPackage" folder.
+Use [unitypackage](https://github.com/sanukin39/UniLocalNotification/tree/master/UnityPackage) under the "UnityPackage" folder.
+
+## Change Notification Icon at Android Status Bar
+Android status bar icons should be 32-bit PNGs with an alpha channel for transparency. So, you can change the icon by creating your aar library.
+
+1. Open [AndroidLibraryProject](https://github.com/sanukin39/UniLocalNotification/tree/master/AndroidLibraryProject) by Android Studio.
+2. Replase notification icon at the "unilocalnotification/src/main/res/drawable/notification_icon.png".
+
+<img src="./images/aar_create_1.png" width="500">
+
+3. Create AAR
+
+    Go to android project root and type "./gradrew assemble".
+
+<img src="./images/aar_create_2.png" width="500">
+
+4. Find AAR At "unilocalnotification/build/outputs/aar/".
+
+<img src="./images/aar_create_3.png" width="500">
+
+5. Replace AAR at the unity project.
+
 
 ## Licence
 
