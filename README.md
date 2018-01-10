@@ -84,7 +84,7 @@ Android status bar icons should be 32-bit PNGs with an alpha channel for transpa
 
 ## Licence
 
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
+[MIT](https://github.com/sanukin39/UniLocalNotification/blob/master/LICENSE)
 
 ## Author
 
