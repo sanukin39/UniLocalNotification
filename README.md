@@ -71,7 +71,7 @@ Android status bar icons should be 32-bit PNGs with an alpha channel for transpa
 
 3. Create AAR
 
-    Go to android project root and type "./gradrew assemble".
+    Go to android project root and type "./gradlew assemble".
 
 <img src="./images/aar_create_2.png" width="500">
 
