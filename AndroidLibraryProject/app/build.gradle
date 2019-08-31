@@ -26,4 +26,5 @@ dependencies {
     })
     implementation 'com.android.support:appcompat-v7:26.0.0'
     testImplementation 'junit:junit:4.12'
+    compileOnly 'com.google.android.gms:play-services-auth:9.4.0'
 }
