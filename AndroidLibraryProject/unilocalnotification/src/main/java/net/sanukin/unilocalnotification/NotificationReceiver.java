@@ -57,9 +57,9 @@ public class NotificationReceiver extends BroadcastReceiver {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
         {
             String channelId = "default";
-            NotificationChannel channel = new NotificationChannel(channelId, title, NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationChannel channel = new NotificationChannel(channelId, "Default", NotificationManager.IMPORTANCE_DEFAULT);
 
-            channel.setDescription(message);
+            channel.setDescription("Default Notification");
             channel.enableVibration(true);
             channel.canShowBadge();
             channel.setLockscreenVisibility(Notification.VISIBILITY_PRIVATE);
