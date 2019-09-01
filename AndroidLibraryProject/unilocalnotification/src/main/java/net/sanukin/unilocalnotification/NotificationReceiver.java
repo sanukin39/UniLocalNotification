@@ -65,6 +65,8 @@ public class NotificationReceiver extends BroadcastReceiver {
             channel.setLockscreenVisibility(Notification.VISIBILITY_PRIVATE);
             channel.setShowBadge(true);
 
+            manager.createNotificationChannel(channel);
+
             PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_ONE_SHOT);
 
             Notification notification = new Notification.Builder(context, channelId)
